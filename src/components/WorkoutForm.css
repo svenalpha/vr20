@@ -1,0 +1,50 @@
+
+
+:root {--primary: #1aac83; --error: #e7195a; --backgr: brown;}
+
+
+.module_StrClass {color: purple; background-color: cyan;}
+
+.module_StrClass1 {background-color: red;}
+
+.module_StrClass2 {font-size: 18px; color: white; background-color: var(--backgr);}
+
+
+
+
+
+:root { --primary: #1aac83; --error: #e7195a;
+}
+.strClass {color:red; background-color:yellow;}
+.strClass2 {color: green; background-color:blue;}
+
+
+/* conditional classes. see CreateWorkoutForm   input */
+/* input.error{border: 1px solid var(--error); color:green;} */
+:root {
+    --primary: #1aac83;
+     --error: #e7195a;
+  }
+
+form button {
+    background: var(--primary);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-family: "Poppins";
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  div.error {
+    padding: 10px;
+    background: #ffefef;
+    border: 7px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  input.error {
+    border: 7px solid var(--error);
+  }
+  
+

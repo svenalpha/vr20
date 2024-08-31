@@ -1,0 +1,101 @@
+
+
+.navWrapper {
+
+    background-color: $buttonBg;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 12px $buttonBg;
+    border: 5px solid red;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items:center;
+    justify-content: right;
+
+
+
+
+
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;/* justify-content: center; */
+    gap: 20px;
+    padding: 15px 0 15px 0px;  /* padding: 20px 0;   */
+    margin: 0;
+    /* border: 2px solid blue; */
+    margin: 0 auto;
+    li {
+        list-style: none;
+        a { padding: 10px 0;    /*padding: 10px 0; */
+            font-size: 18px;
+            color: $defaultTextLight;
+            /*  background-color: yellow;  */
+            &:hover {
+                color: $primary;
+                    }
+          }
+          p {//background-color: red; 
+            padding:0; margin: 0;
+            /* padding: 10px 0; */    /*padding: 10px 0; */
+            font-size: 18px;
+            color: $defaultTextLight;
+            /*  background-color: yellow;  */
+            &:hover {
+                color:  $defaultTextLight;         /* $primary;  */
+                    }
+
+            }
+
+
+
+
+       /*QQ
+        :global {
+            a.active {
+                color:  $primary;  
+                     }
+                }
+      QQ*/                   
+       }
+}
+
+li {list-style: none; :global  a.active{color: $primary;}}
+
+
+.div1 
+{border: 2px solid pink; /* margin-left: auto; margin-right: 0%;   width: 700px;   */
+    //bottom: 0;  /*  width: 100%; height:100%;  */
+     /*  height:56px;  */  
+     justify-content: center;  align-items:center;   /*position:relative;  */
+    /* top:0px; bottom: 0px;    */  
+  /*   position:absolute;   */ 
+/*xxxxxxxx for centring   xxxxxxxxxxxxxxxxxxx*/
+/* position: absolute; right:50%; left:50%; */ /* puts div1 in middle, contents overflow  */
+/*xxxxxxxx for centring   xxxxxxxxxxxxxxxxxxx*/
+
+  /* padding-left:0%; padding-right: auto;  */
+  // width: max-content; 
+   //padding: 0px 0px 0px 100px; 
+  //justifyposition:center;
+}
+
+.div2 {border: 2px solid blue; margin-left:0; margin-right: 0px;// ng-right: 50%; 
+    display: flex;  align-items: right;  justify-content: right; //width: 100%;
+      }
+.div21{border: 5px solid brown; padding:0;margin:0;//padding-left:auto;//display: flex;
+        //align-items: right;  justify-content: right; //width: 100%;
+      } 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+.nav_contact {color: red;}
+.nav_contact_inner {color: yellow;}
+.div9 {border: 5px solid blue; margin-left: auto; margin-right: 0%; height:100%}
+.div1 {border: 2px solid pink; //margin-left: auto; margin-right: 0%; //width: 700px;
+       bottom: 0;//  width: 100%; height:100%;
+       height:56px;  justify-content: center;  align-items:center;//position:relative;
+       //top:0px; bottom: 0px;  
+ //position:absolute; 
+ right:50%; left:50%; // puts div1 in middle, contents overflow
+ //padding-left:0%; padding-right: auto;
+      }
+.div2 {border: 2px solid purple; margin-left:auto; margin-right: 0px;margin-top:0px; margin-bottom:0px;// ng-right: 50%; 
+    display: flex;  align-items: right;  justify-content: right; //width: 100%;
+      padding: 0px;
+      }
+.div21{border: 5px solid brown; //padding-left:auto;//display: flex;
+        //align-items: right;  justify-content: right; //width: 100%;
+      }     
+
+.navWrapper {
+    /*DD
+    height: 150px;
+    background-color: $buttonBg;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 12px $buttonBg;
+    border: 2px solid red;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    //background-size: cover;
+    box-sizing: border-box;
+    DD*/
+
+    
+    background-color: $buttonBg;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 12px $buttonBg;
+    border: 2px solid red;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    //background-size: cover;
+    box-sizing: border-box;
+    height: 56px;
+
+}
+
+.nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //gap: 20px;         // 20px
+    //padding: 20px 0;     // 20px  0
+    //margin: 0;
+    background: yellow;
+
+    li { list-style: none;}
+
+ span  {  
+//    li {
+        list-style: none;
+
+        a {
+            padding: 10px 0;  /* 10px  0 */
+            font-size: 18px;   /*  18px */
+            color: $defaultTextLight; 
+            background-color: pink;
+
+            &:hover {
+                color: $primary;
+                    }
+          }    // end a
+
+        :global {
+                 a.active {
+                           color: $primary;
+                          }
+                }
+       }   // end li  / span
+
+}   // end .nav
+
+
+.nav1 {
+    //top: 0px;
+    //bottom: 150px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0;
+    background: yellowgreen;
+
+    li {
+        list-style: none;
+        color:white;
+
+        a {
+            padding: 10px 0;
+            font-size: 18px;
+            //color: $defaultTextLight;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        :global {
+            a.active {
+                color: $primary;
+            }
+        }
+    }
+
+}
+
+.login_class {color: tomato;}
+.logout_class {color: tomato;}
+.none1 {display: none; width: 0%;}
+.test1 {color: tomato;}
+.test2 {color: white;}
+.test2a {color: brown;}
+.nowrap1 {white-space: nowrap; display: flex;}
+
+

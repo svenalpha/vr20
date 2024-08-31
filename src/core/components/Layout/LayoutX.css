@@ -1,0 +1,193 @@
+/*    *{margin: 10px;}   all elements within that portion of DOM have margin 10px      */ 
+/*  :root {--main-colour: pink;}   root element of tree representing document, useful for global variables */      
+/* #anElement {all: unset;} or #anElement{all: initial;}   removes all properties or reverts to default*/
+
+:root{     
+--primary: #646cff;
+
+--bgDark: #242424;
+--buttonBg: #1a1a1a;
+--buttonBgLight: #f9f9f9;
+
+--defaultTextLight: rgba(255, 255, 255, 0.87);
+--defaultTextDark: #213547;
+
+--white: #ffffff;
+
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      font-weight: 400;
+    
+      color-scheme: var(--light dark);
+      color: var(--defaultTextLight);
+      background-color: var(--bgDark);
+    
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-text-size-adjust: 100%;
+}
+
+
+a {
+  font-weight: 500;
+  color: primary;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--buttonBg);
+  cursor: pointer;
+  transition: var(--border-color 0.25s);
+}
+button:hover {
+  border-color: var(--primary);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#app {
+  text-align: center;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--defaultTextDark);
+    background-color: --white;
+  }
+  a:hover {
+    color: --primary;
+  }
+  button {
+    background-color: var(--buttonBgLight);
+  }
+}
+
+
+
+
+
+
+
+
+/*  see hbs_test5 for extensive css*/
+.toHide {display: none; width:0%;}
+.toShow {display: inline; white-space: nowrap; display: flex;}
+.bkg1  {background-color: yellow;}
+.bkg2  {background-color: white;}
+
+/* className={styles.login_class + "bkg1"} */
+/*   style={{color: 'red' }}  */
+#second_id
+{li 
+  { color:yellow;
+  }    
+}
+
+#p3{color:white;}
+#first_ul
+{display: flex;
+  li{color: black; background-color: yellow;
+    border: 2px solid blue;
+    padding: 0px; margin: 0px;
+    /*height:25px;   */
+    
+    }
+}
+.nav_contact_inner {color: yellow;}
+
+
+#div_id2
+{border: 2px solid yellowgreen;
+top:0px; right: 0px; bottom: 0px; left: 0px;   
+justify-content: center;
+}
+
+
+.navWrapper {
+  
+  background-color: var(--buttonBg);/*var(--test1-colour); */                                                  
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 12px  var(--buttonBg);    
+  border: 2px solid red;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  /*  background-size: cover;  */
+  box-sizing: border-box;
+  height: 56px;
+
+}  
+
+
+.div1 {border: 2px solid pink; /* margin-left: auto; margin-right: 0%;   width: 700px;   */
+  bottom: 0;  /*  width: 100%; height:100%;  */
+  height:56px;  justify-content: center;  align-items:center;   /*position:relative;  */
+  /* top:0px; bottom: 0px;    */  
+/*   position:absolute;   */ 
+right:50%; left:50%; /* puts div1 in middle, contents overflow  */
+/* padding-left:0%; padding-right: auto;  */
+ }
+
+ .nav 
+ {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /*   gap: 20px;         // 20px      */
+     /* padding: 20px 0;     // 20px  0   */
+     /* margin: 0;    */
+     background: yellow;
+ 
+     li { list-style: none;}
+ }
+ .nav  span  li {list-style: none;
+                }
+ 
+.nav  span  li a {
+             padding: 10px 0;  /* 10px  0 */
+             font-size: 18px;   /*  18px */
+             color: var(--defaultTextLight); 
+             background-color: pink;
+                 }
+
+.nav  span  li a  &:hover {
+                 color: var(--primary);
+                          }
+           
+ 
+.nav  span  li a :global a.active { color: var(--primary);
+                                  }
+       
+ 
+ 
+ 
+ 
+
+
+
+
+
+
